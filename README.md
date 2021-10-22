@@ -2,6 +2,7 @@ PrettyNumbers.jl
 ================
 
 [![CI](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/ronisbr/PrettyNumbers.jl/branch/main/graph/badge.svg?token=PRRLTAX1V9)](https://codecov.io/gh/ronisbr/PrettyNumbers.jl)
 
 This package has the purpose to provide a way to render numbers in a more visual
 way for data analysis. Currently, we only have the text backend.

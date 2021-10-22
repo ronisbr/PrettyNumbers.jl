@@ -20,6 +20,34 @@
         result = pretty_number(String, 1//1234567890)
         expected = "¹/₁₂₃₄₅₆₇₈₉₀"
         @test result == expected
+
+        result = pretty_number(String, -1986//1987)
+        expected = "- ¹⁹⁸⁶/₁₉₈₇"
+        @test result == expected
+
+        result = pretty_number(String, -1234567890//1)
+        expected = "- ¹²³⁴⁵⁶⁷⁸⁹⁰/₁"
+        @test result == expected
+
+        result = pretty_number(String, -1//1234567890)
+        expected = "- ¹/₁₂₃₄₅₆₇₈₉₀"
+        @test result == expected
+    end
+
+    @testset "Compact" begin
+        result = pretty_number(String, 1986//1987; compact = false)
+        expected = """
+        1986
+        ————
+        1987"""
+        @test result == expected
+
+        result = pretty_number(String, -1986//1987; compact = false)
+        expected = """
+          1986
+        - ————
+          1987"""
+        @test result == expected
     end
 end
 
@@ -71,6 +99,42 @@ end
 
         result = pretty_number(String, 1e9)
         expected = "1 ⋅ 10⁹"
+        @test result == expected
+
+        result = pretty_number(String, 1e-1)
+        expected = "1 ⋅ 10⁻¹"
+        @test result == expected
+
+        result = pretty_number(String, 1e-2)
+        expected = "1 ⋅ 10⁻²"
+        @test result == expected
+
+        result = pretty_number(String, 1e-3)
+        expected = "1 ⋅ 10⁻³"
+        @test result == expected
+
+        result = pretty_number(String, 1e-4)
+        expected = "1 ⋅ 10⁻⁴"
+        @test result == expected
+
+        result = pretty_number(String, 1e-5)
+        expected = "1 ⋅ 10⁻⁵"
+        @test result == expected
+
+        result = pretty_number(String, 1e-6)
+        expected = "1 ⋅ 10⁻⁶"
+        @test result == expected
+
+        result = pretty_number(String, 1e-7)
+        expected = "1 ⋅ 10⁻⁷"
+        @test result == expected
+
+        result = pretty_number(String, 1e-8)
+        expected = "1 ⋅ 10⁻⁸"
+        @test result == expected
+
+        result = pretty_number(String, 1e-9)
+        expected = "1 ⋅ 10⁻⁹"
         @test result == expected
     end
 

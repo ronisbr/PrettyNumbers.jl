@@ -1,6 +1,8 @@
 PrettyNumbers.jl
 ================
 
+[![CI](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml)
+
 This package has the purpose to provide a way to render numbers in a more visual
 way for data analysis. Currently, we only have the text backend.
 

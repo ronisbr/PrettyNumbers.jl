@@ -1,6 +1,11 @@
 PrettyNumbers.jl Changelog
 ==========================
 
+Version 0.1.1
+-------------
+
+- ![Bugfix][badge-bugfix] Handle "0" better when converting to pretty numbers.
+
 Version 0.1.0
 -------------
 

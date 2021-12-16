@@ -57,6 +57,10 @@ end
         expected = "1.1986 ⋅ 10⁶"
         @test result == expected
 
+        result = pretty_number(String, 0)
+        expected = "0"
+        @test result == expected
+
         result = pretty_number(String, 1e0)
         expected = "1"
         @test result == expected
@@ -188,6 +192,14 @@ end
             new_decimal_base = 5
         )
         expected = "11.9862 ⋅ 10⁵"
+        @test result == expected
+
+        result = pretty_number(
+            String,
+            0,
+            new_decimal_base = 6
+        )
+        expected = "0 ⋅ 10⁶"
         @test result == expected
     end
 end

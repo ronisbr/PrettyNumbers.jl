@@ -1,7 +1,7 @@
 name = "PrettyNumbers"
 uuid = "d1bdb62b-d559-469f-b147-fd8a93502a34"
 authors = ["Ronan Arraes Jardim Chagas <ronan.arraes@inpe.br>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "^1.6"

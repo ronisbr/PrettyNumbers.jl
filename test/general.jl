@@ -15,7 +15,7 @@
     result = String(readavailable(in))
     redirect_stdout(old_stdout)
 
-    expected = "1.19862 ⋅ 10⁶"
+    expected = "1.19862 × 10⁶"
 
     @test result == expected
 end

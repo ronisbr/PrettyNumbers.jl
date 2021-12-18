@@ -43,6 +43,9 @@ In this case, the following keywords are available:
 
 - `always_print_base::Bool`: If `true`, then the base is always printed even if
     the base exponent is 0. (**Default** = `false`)
+- `multiplication_sign::Char`: The multiplication sign that will be used between
+    the significand and the decimal base, common options are `'⋅'` and `'×'`.
+    (**Default** = `'×'`)
 - `significand_format::String`: The format that will be used to print the
     signifcand, as described by the function [`Printf.@printf`](@ref).
     (**Default** = `"%g"`)

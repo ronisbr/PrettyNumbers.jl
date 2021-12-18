@@ -42,6 +42,9 @@ In this case, the following keywords are available:
 
 - `always_print_base::Bool`: If `true`, then the base is always printed even if
     the base exponent is 0. (**Default** = `false`)
+- `multiplication_sign::Char`: The multiplication sign that will be used between
+    the significand and the decimal base, common options are `'⋅'` and `'×'`.
+    (**Default** = `'×'`)
 - `significand_format::String`: The format that will be used to print the
     signifcand, as described by the function [`Printf.@printf`](@ref).
     (**Default** = `"%g"`)
@@ -65,11 +68,14 @@ julia> pretty_number(19//86; compact = false)
 86
 
 julia> pretty_number(1906.1896)
-1.90619 · 10³
+1.90619 × 10³
 
 julia> pretty_number(1906.1896, significand_format = "%.10f")
-1.9061896000 · 10³
+1.9061896000 × 10³
 
 julia> pretty_number(1906.1896; new_decimal_base = 4)
-0.190619 · 10⁴
+0.190619 × 10⁴
+
+julia> pretty_number(1906.1896; multiplication_sign = '⋅')
+1.90619 ⋅ 10³
 ```

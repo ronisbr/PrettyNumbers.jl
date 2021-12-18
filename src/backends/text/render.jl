@@ -64,6 +64,7 @@ end
 function _render_number_text(
     number::Number;
     always_print_base::Bool = false,
+    multiplication_sign::Char = '×',
     significand_format::String = "%g",
     show_base::Bool = true,
     show_significand::Bool = true,
@@ -113,7 +114,7 @@ function _render_number_text(
         end
 
         if show_significand
-            base_str *= " ⋅ "
+            base_str *= " " * multiplication_sign * " "
         end
 
         base_str *= "10" * exponent_str

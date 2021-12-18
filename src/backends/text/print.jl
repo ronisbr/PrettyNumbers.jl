@@ -16,6 +16,7 @@ function _pn_text(
     significand_format::String = "%g",
     show_base::Bool = true,
     show_significand::Bool = true,
+    multiplication_sign::Char = '×',
     new_decimal_base::Union{Nothing, Number} = nothing
 )
     if number isa Rational
@@ -24,6 +25,7 @@ function _pn_text(
         number_str = _render_number_text(
             number;
             always_print_base,
+            multiplication_sign,
             new_decimal_base,
             significand_format,
             show_base,

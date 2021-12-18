@@ -61,6 +61,10 @@ function _render_number_text(
     end
 end
 
+function _render_number_text(number::Irrational; kwargs...)
+    return string(number)
+end
+
 function _render_number_text(
     number::Number;
     always_print_base::Bool = false,

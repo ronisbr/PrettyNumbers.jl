@@ -51,6 +51,16 @@
     end
 end
 
+@testset "Irrational numbers" verbose = true begin
+    @testset "Default" begin
+        result = pretty_number(String, π)
+        @test result == "π"
+
+        result = pretty_number(String, ℯ)
+        @test result == "ℯ"
+    end
+end
+
 @testset "Numbers" verbose = true begin
     @testset "Default" begin
         result = pretty_number(String, 1.1986e6)

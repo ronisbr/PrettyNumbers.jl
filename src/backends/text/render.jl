@@ -1,16 +1,10 @@
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+## Description #############################################################################
 #
-# Description
-# ==============================================================================
+# Functions to render the numbers in text backend.
 #
-#   Functions to render the numbers in text backend.
-#
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################################################
 
-function _render_number_text(
-    number::Rational;
-    compact::Bool = true
-)
+function _render_number_text(number::Rational; compact::Bool = true)
     if compact
         aux = abs(number.num)
         num_str = ""
@@ -49,8 +43,7 @@ function _render_number_text(
         Δ = div(fraction_width - den_width, 2)
         den_str = " "^Δ * den_str
 
-        # Check if the fraction is negative. In this case, we must change the
-        # alignemnt.
+        # Check if the fraction is negative. In this case, we must change the alignemnt.
         is_neg = number.num < 0
 
         num_str  = (!is_neg ? "" : "  ") * num_str * "\n"
@@ -81,8 +74,7 @@ function _render_number_text(
         significand, base = _get_significand_and_base(number)
     end
 
-    # Significand
-    # ==========================================================================
+    # == Significand =======================================================================
 
     significand_str = ""
 
@@ -91,8 +83,7 @@ function _render_number_text(
         significand_str = Printf.format(fmt, significand)
     end
 
-    # Base
-    # ==========================================================================
+    # == Base ==============================================================================
 
     # If `base` is 0, then only show it if the user wants.
     base_str = ""
@@ -124,8 +115,7 @@ function _render_number_text(
         base_str *= "10" * exponent_str
     end
 
-    # Output
-    # ==========================================================================
+    # == Output ============================================================================
 
     number_str = significand_str * base_str
 

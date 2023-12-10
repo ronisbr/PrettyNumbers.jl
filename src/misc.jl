@@ -1,14 +1,11 @@
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+## Description #############################################################################
 #
-# Description
-# ==============================================================================
+# Miscellaneous functions.
 #
-#   Miscellaneous functions.
-#
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################################################
 
 """
-    _get_significand_and_base(number::Number[, new_decimal_base::Integer])
+    _get_significand_and_base(number::Number[, new_decimal_base::Integer]) -> Tuple{Number, Int}
 
 Return the significand and the base of the `number` in base 10. If the parameter
 `new_decimal_base` is passed, then the output base is converted to this value.

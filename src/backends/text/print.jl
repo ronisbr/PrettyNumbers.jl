@@ -1,11 +1,8 @@
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+## Description #############################################################################
 #
-# Description
-# ==============================================================================
+# Functions to print the numbers using the text backend.
 #
-#   Functions to print the numbers using the text backend.
-#
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################################################
 
 # Printing function for the text backend.
 function _pn_text(
@@ -33,8 +30,8 @@ function _pn_text(
         )
     end
 
-    # Output to the IO buffer
-    # ==========================================================================
+    # == Output to the IO buffer ===========================================================
+
     print(io, number_str)
 
     return nothing

@@ -4,9 +4,9 @@ PrettyNumbers.jl Changelog
 Version 0.2.0
 -------------
 
-- ![BREAKING][badge-breaking]![Feature][badge-feature] We can now select the
-  multiplication sign between the significand and the decimal base using the
-  keyword `multiplication_sign`. The default was changed from `·` to `×`.
+- ![BREAKING][badge-breaking]![Feature][badge-feature] We can now select the multiplication
+  sign between the significand and the decimal base using the keyword `multiplication_sign`.
+  The default was changed from `·` to `×`.
 - ![Feature][badge-feature] A new renderer for irrational numbers was added.
 
 Version 0.1.1

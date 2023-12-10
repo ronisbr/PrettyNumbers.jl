@@ -1,6 +1,11 @@
 PrettyNumbers.jl Changelog
 ==========================
 
+Version 0.2.1
+-------------
+
+- ![Info][badge-info] Internal improvements in the source-code and tests.
+
 Version 0.2.0
 -------------
 

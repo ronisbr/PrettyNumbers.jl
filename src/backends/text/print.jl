@@ -1,10 +1,10 @@
 ## Description #############################################################################
 #
-# Functions to print the numbers using the text backend.
+# Functions to print the numbers using the text back end.
 #
 ############################################################################################
 
-# Printing function for the text backend.
+# Printing function for the text back end.
 function _pn_text(
     io::IO,
     number::Number;

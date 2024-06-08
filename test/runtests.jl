@@ -5,10 +5,10 @@ using PrettyNumbers
     include("./general.jl")
 end
 
-@testset "LaTeX backend" verbose = true begin
+@testset "LaTeX Back End" verbose = true begin
     include("./latex_backend.jl")
 end
 
-@testset "Text backend" verbose = true begin
+@testset "Text Back End" verbose = true begin
     include("./text_backend.jl")
 end

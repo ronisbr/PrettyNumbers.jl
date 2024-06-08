@@ -1,6 +1,6 @@
 ## Description #############################################################################
 #
-# Functions to render the numbers in text backend.
+# Functions to render the numbers in text back end.
 #
 ############################################################################################
 

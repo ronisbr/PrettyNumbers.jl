@@ -85,7 +85,7 @@ function _render_number_text(
 
     # == Base ==============================================================================
 
-    # If `base` is 0, then only show it if the user wants.
+    # If `base` is 0, only show it if the user wants.
     base_str = ""
 
     if show_base && ((base != 0) || always_print_base)

@@ -12,3 +12,7 @@ end
 @testset "Text Back End" verbose = true begin
     include("./text_backend.jl")
 end
+
+@testset "Issues" verbose = true begin
+    include("./issues.jl")
+end

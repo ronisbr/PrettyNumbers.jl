@@ -100,7 +100,7 @@ function _render_number_text(
         end
 
         # If `exponent_str` is empty, then the base is 0.
-        if always_print_base
+        if always_print_base && isempty(exponent_str)
             exponent_str = "⁰"
         end
 

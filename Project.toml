@@ -1,12 +1,14 @@
 name = "PrettyNumbers"
 uuid = "d1bdb62b-d559-469f-b147-fd8a93502a34"
 license = "MIT"
-desc = "Pretty print numbers in Julia"
+desc = "Pretty print numbers in Julia."
 authors = ["Ronan Arraes Jardim Chagas <ronisbr@gmail.com>"]
 version = "0.2.2"
 
 [compat]
-julia = "^1.6"
+Printf = "1.6"
+Test = "1.6"
+julia = "1.6"
 
 [deps]
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"

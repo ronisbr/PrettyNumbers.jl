@@ -118,14 +118,14 @@ julia> pretty_number(19//86; backend = Val(:latex))
 ^{19}/_{86}
 
 julia> pretty_number(19//86; backend = Val(:latex), compact = false)
-\\frac{19}{86}
+\frac{19}{86}
 
 julia> pretty_number(1906.1896; backend = Val(:latex))
-1.90619 \\times 10^{3}
+1.90619 \times 10^{3}
 
 julia> pretty_number(1906.1896; backend = Val(:latex), significand_format = "%.10f")
-1.9061896000 \\times 10^{3}
+1.9061896000 \times 10^{3}
 
 julia> pretty_number(1906.1896; backend = Val(:latex), new_decimal_base = 4)
-0.190619 \\times 10^{4}
+0.190619 \times 10^{4}
 ```

@@ -245,3 +245,31 @@ end
         @test result == expected
     end
 end
+
+@testset "LaTeX Back End Specific Features" verbose = true begin
+    @testset "Wrap Number in Math Environment" begin
+        result = pretty_number(
+            String,
+            -1986 // 1987;
+            backend = Val(:latex),
+            compact = false,
+            wrap_in_math_env = true
+        )
+        expected = "\$-\\frac{1986}{1987}\$"
+        @test result == expected
+
+        result = pretty_number(
+            String,
+            -1986 // 1987;
+            backend = Val(:latex),
+            compact = false,
+            wrap_in_math_env = true,
+            math_env = :equation,
+        )
+        expected = """
+            \\begin{equation}
+              -\\frac{1986}{1987}
+            \\end{equation}"""
+        @test result == expected
+    end
+end

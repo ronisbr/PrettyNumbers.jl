@@ -4,6 +4,8 @@
 #
 ############################################################################################
 
+Base.@irrational sqrt2 1.4142135623730950488 √big(2)
+
 @testset "Rational numbers" verbose = true begin
     @testset "Default" begin
         result = pretty_number(String, 1986//1987; backend = Val(:latex))
@@ -49,6 +51,9 @@ end
 
         result = pretty_number(String, ℯ; backend = Val(:latex))
         @test result == "e"
+
+        result = pretty_number(String, sqrt2; backend = Val(:latex))
+        @test result == "sqrt2"
     end
 end
 

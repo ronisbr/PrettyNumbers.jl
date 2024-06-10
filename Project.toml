@@ -3,7 +3,7 @@ uuid = "d1bdb62b-d559-469f-b147-fd8a93502a34"
 license = "MIT"
 desc = "Pretty print numbers in Julia."
 authors = ["Ronan Arraes Jardim Chagas <ronisbr@gmail.com>"]
-version = "0.2.2"
+version = "0.2.3"
 
 [compat]
 Printf = "1.6"

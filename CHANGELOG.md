@@ -1,6 +1,11 @@
 PrettyNumbers.jl Changelog
 ==========================
 
+Version 0.2.3
+-------------
+
+- ![Feature][badge-feature] We added the LaTeX back end.
+
 Version 0.2.2
 -------------
 

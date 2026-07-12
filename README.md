@@ -1,7 +1,9 @@
 # PrettyNumbers.jl
 
-[![CI](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/ronisbr/PrettyNumbers.jl/branch/main/graph/badge.svg?token=PRRLTAX1V9)](https://codecov.io/gh/ronisbr/PrettyNumbers.jl)
+[![CI](https://img.shields.io/github/actions/workflow/status/ronisbr/PrettyNumbers.jl/ci.yml?style=flat-square&logo=githubactions&logoColor=white&labelColor=475569&label=CI)](https://github.com/ronisbr/PrettyNumbers.jl/actions/workflows/ci.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/ronisbr/PrettyNumbers.jl?token=PRRLTAX1V9&style=flat-square&logo=codecov&logoColor=white&labelColor=475569)](https://codecov.io/gh/ronisbr/PrettyNumbers.jl)
+[![License](https://img.shields.io/github/license/ronisbr/PrettyNumbers.jl?style=flat-square&logo=readme&logoColor=white&labelColor=475569&color=0284C7)](https://github.com/ronisbr/PrettyNumbers.jl/blob/main/LICENSE.txt)
+[![Code Style: Blue](https://img.shields.io/badge/code%20style-Blue-4495D1?style=flat-square&logo=julia&logoColor=white&labelColor=475569)](https://github.com/invenia/BlueStyle)
 
 This package has the purpose to provide a way to render numbers in a more visual way for
 data analysis. Currently, we only have the text back end.
